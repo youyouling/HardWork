@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         String s = null;
         if (!"hello".equals(s)) {
-            Log.d("yml", "程序順利執行");
+            Log.d("yml", "程序顺利执行");
         }
         new Thread(new Runnable() {
             @Override
