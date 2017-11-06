@@ -7,7 +7,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.support.annotation.Nullable;
-import android.support.v4.app.NotificationCompat;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
