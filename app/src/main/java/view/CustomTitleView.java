@@ -77,6 +77,7 @@ public class CustomTitleView extends View {
                 case R.styleable.CustomTitleView_titleText:
                     mTitleText = a.getString(attr);
                     break;
+
             }
         }
         a.recycle();
