@@ -1,12 +1,10 @@
 package com.youyou.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.Button;
 
 import java.util.HashSet;
 import java.util.Random;
@@ -14,6 +12,7 @@ import java.util.Set;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import view.CustomTitleView;
 
 /**
@@ -27,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.custom)
     CustomTitleView custom;
 
+    @Bind(R.id.button)
+    Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 custom.setmTitleText(randomText());
+
             }
         });
 
@@ -54,5 +57,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return sb.toString();
+    }
+
+    @OnClick(R.id.button)
+    public void onViewClicked() {
+        Intent intent = new Intent(MainActivity.this, AnimationActivity.class);
+        startActivity(intent);
     }
 }
