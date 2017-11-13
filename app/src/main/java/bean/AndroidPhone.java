@@ -7,7 +7,6 @@ import interfaces.IPhone;
 /**
  * Created by lenovo on 2017/11/13.
  */
-git
 public class AndroidPhone implements IPhone {
     private final String TAG = AndroidPhone.class.getSimpleName();
 
